@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        /**
+        * Переменная money - колличество денег 
+        * Переменная str переводит money в строку 
+        * Переменная last находит последний символ из строки
+        * С помощью оператора if выполняем подсчеты
+        *
+        */
+        let money = prompt('Введите колличество денег:');
+        let str = String(money);
+        console.log(str);
+        let last = str.slice(-1);
+        console.log(last);
+        if (last == 1) {
+            alert('Зачислено: ' + money + ' рубль.')
+        } if (last > 1 && last < 5) {
+            alert('Зачислено: ' + money + ' рубля.')
+        } else if (last > 4 && last < 21 || last == 0) {
+            alert('Зачислено: ' + money + ' рублей.')
+        } else {
+            alert('Введите число!')
+        }
+
+    </script>
+</body>
+
+</html>
